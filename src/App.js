@@ -15,7 +15,7 @@ function App() {
     { path: "/", element: <HomePage /> },
     { path: "/:id", element: <MovieDetails /> },
   ]);
-  console.log("this is app");
+  console.log("this is appp");
   return (
     <>
       <ToastContainer />
