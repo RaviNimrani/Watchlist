@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { ToastContainer } from "react-toastify";
+import Form from "./Components/Form/Form";
+
+import MovieList from "./Components/MovieList/MovieList";
+import Navbar from "./Components/Navbar/Navbar";
+import "./app.css";
+import "react-toastify/dist/ReactToastify.css";
+import EditContextProvider from "./editContext";
+import MovieDetails from "./Components/MovieDetails/MovieDetails";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import HomePage from "./Components/HomePage/HomePage";
 
 function App() {
+  const router = createBrowserRouter([
+    { path: "/", element: <HomePage /> },
+    { path: "/:id", element: <MovieDetails /> },
+  ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ToastContainer />
+      <RouterProvider router={router} />
+      {/* <MovieDetails /> */}
+    </>
   );
 }
 

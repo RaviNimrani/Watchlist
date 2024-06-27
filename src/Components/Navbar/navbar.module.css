@@ -1,0 +1,67 @@
+/* main container of the navbar */
+.navbarContainer {
+  background-color: white;
+  border-bottom: 2px solid black;
+
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  color: rgb(26, 174, 243);
+}
+
+.appName a {
+  color: rgb(26, 174, 243);
+  text-decoration: none;
+}
+
+/* app name inside navbar */
+.appName a:hover {
+  color: rgb(26, 9, 9);
+}
+
+/* all the navigating links */
+.navLinks {
+  float: right;
+}
+
+/* single link within the navlink */
+.navLinks span {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+/* styling link */
+.navLinks a {
+  color: rgb(26, 174, 243);
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+/* style on hover over the link */
+.navLinks a:hover {
+  color: black;
+}
+
+.count {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 20px;
+  justify-content: center;
+  height: 20px;
+  top: 0.5rem;
+  right: 9.3rem;
+  background-color: rgb(1, 26, 252);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
