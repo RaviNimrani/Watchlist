@@ -12,8 +12,8 @@ import HomePage from "./Components/HomePage/HomePage";
 
 function App() {
   const router = createBrowserRouter([
-    { path: "/", element: <HomePage /> },
-    { path: "/:id", element: <MovieDetails /> },
+    { path: "/watchlist", element: <HomePage /> },
+    { path: "/watchlist/:id", element: <MovieDetails /> },
   ]);
   console.log("this is appp");
   return (
