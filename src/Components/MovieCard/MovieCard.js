@@ -43,7 +43,7 @@ const MovieCard = ({ movie, index }) => {
           </div>
           <div className={styles["details"]}>
             <Link
-              to={`/${index}`}
+              to={`/watchlist/${index}`}
               style={{ textDecoration: "none", color: "black" }}
             >
               <h2>
