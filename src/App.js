@@ -12,7 +12,7 @@ import HomePage from "./Components/HomePage/HomePage";
 
 function App() {
   const router = createBrowserRouter([
-    { path: "/", element: <HomePage /> },
+    { path: "/watchlist", element: <HomePage /> },
     { path: "/:id", element: <MovieDetails /> },
   ]);
   return (
