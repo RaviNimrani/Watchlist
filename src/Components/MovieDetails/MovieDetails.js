@@ -13,7 +13,7 @@ const MovieDetails = () => {
   }
 
   const movie = movieList[id]; // Selecting the movie object based on id from movieList
-  console.log(movie); // Logging movie object for debugging
+  console.log(id); // Logging movie object for debugging
   if (!movie) {
     return <p>Nothing to show</p>;
   }
